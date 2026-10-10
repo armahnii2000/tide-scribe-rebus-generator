@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tide-scribe-rebus-library"
+version = "0.1.0"
+description = "Curated and combinable rebus puzzle library for games with difficulty ranking"
+readme = "README.md"
+authors = [{ name = "Tide Scribe Team" }]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+tide-rebus = "rebus.cli:main"

@@ -1,0 +1,34 @@
+{
+  "description": "Rules for dynamically combining atomic rebus elements into compound phrases and sentences.",
+  "subjects": [
+    {"value": "I", "symbol": "👁️", "description": "Eye icon (phonetic I)"},
+    {"value": "YOU", "symbol": "👉", "description": "Pointing hand icon (YOU)"},
+    {"value": "WE", "symbol": "👥", "description": "Pair of silhouettes (WE)"},
+    {"value": "THE SUN", "symbol": "☀️", "description": "Bright sun icon"},
+    {"value": "A SURFER", "symbol": "🏄", "description": "Person on surfboard"}
+  ],
+  "verbs": [
+    {"value": "LOVE", "symbol": "❤️", "description": "Heart icon"},
+    {"value": "SEE", "symbol": "🌊", "description": "Ocean sea icon (phonetic SEE)"},
+    {"value": "FOUND", "symbol": "🔍", "description": "Magnifying glass over treasure"},
+    {"value": "BUILT", "symbol": "🛠️", "description": "Tools building something"}
+  ],
+  "templates": [
+    {
+      "id": "tpl_subj_verb_obj",
+      "pattern": ["subject", "verb", "tier1_object"],
+      "difficulty_tier": "tier_3_phrases",
+      "difficulty_score": 6,
+      "time_limit_sec": 18,
+      "example": "I LOVE SANDCASTLES"
+    },
+    {
+      "id": "tpl_spatial_sentence",
+      "pattern": ["subject", "verb", "tier2_spatial"],
+      "difficulty_tier": "tier_4_sentences",
+      "difficulty_score": 8,
+      "time_limit_sec": 18,
+      "example": "I UNDERSTAND HIGH TIDE"
+    }
+  ]
+}

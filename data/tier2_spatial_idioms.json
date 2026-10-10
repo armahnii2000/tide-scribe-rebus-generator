@@ -1,0 +1,152 @@
+[
+  {
+    "id": "t2_01",
+    "answer": "I UNDERSTAND",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 3,
+    "category": "idiom",
+    "hint": "To comprehend or grasp a concept",
+    "time_limit_sec": 18,
+    "alternate_answers": ["UNDERSTAND"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "text", "value": "STAND", "symbol": "🚶", "position": "top", "modifier": null, "cloud_description": "The word STAND rendered as giant cloud letters above"},
+      {"type": "spatial", "value": "UNDER", "symbol": "⬇️", "position": "divider", "modifier": null, "cloud_description": "Horizontal gap in the sky"},
+      {"type": "text", "value": "I", "symbol": "👁️", "position": "bottom", "modifier": null, "cloud_description": "The letter I sitting directly beneath STAND"}
+    ]
+  },
+  {
+    "id": "t2_02",
+    "answer": "HEAD OVER HEELS",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 4,
+    "category": "idiom",
+    "hint": "Madly in love, or tumbling upside down",
+    "time_limit_sec": 16,
+    "alternate_answers": ["HEAD OVER HEELS IN LOVE"],
+    "combinable_part": "modifier",
+    "clues": [
+      {"type": "text", "value": "HEAD", "symbol": "🗣️", "position": "top", "modifier": null, "cloud_description": "HEAD written across high clouds"},
+      {"type": "spatial", "value": "OVER", "symbol": "⬆️", "position": "relative", "modifier": null, "cloud_description": "Clear vertical stacking"},
+      {"type": "text", "value": "HEELS", "symbol": "👠", "position": "bottom", "modifier": null, "cloud_description": "HEELS written underneath"}
+    ]
+  },
+  {
+    "id": "t2_03",
+    "answer": "ONE IN A MILLION",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 3,
+    "category": "saying",
+    "hint": "Exceptionally rare and special",
+    "time_limit_sec": 16,
+    "alternate_answers": ["1 IN A MILLION", "ONE IN MILLION"],
+    "combinable_part": "modifier",
+    "clues": [
+      {"type": "text", "value": "M 1 L L I O N", "symbol": "1️⃣", "position": "center", "modifier": "embedded", "cloud_description": "The numeral 1 embedded right inside the cloud word MILLION"}
+    ]
+  },
+  {
+    "id": "t2_04",
+    "answer": "ONCE UPON A TIME",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 4,
+    "category": "fairytale",
+    "hint": "Traditional opening of fairy tales",
+    "time_limit_sec": 16,
+    "alternate_answers": ["ONCE UPON TIME"],
+    "combinable_part": "adverbial",
+    "clues": [
+      {"type": "text", "value": "ONCE", "symbol": "1️⃣", "position": "top", "modifier": null, "cloud_description": "The word ONCE written in high clouds"},
+      {"type": "spatial", "value": "UPON", "symbol": "⬆️", "position": "relative", "modifier": null, "cloud_description": "Positioned right on top of"},
+      {"type": "text", "value": "TIME", "symbol": "⏰", "position": "bottom", "modifier": null, "cloud_description": "The word TIME (or clock face) below"}
+    ]
+  },
+  {
+    "id": "t2_05",
+    "answer": "READING BETWEEN THE LINES",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 4,
+    "category": "idiom",
+    "hint": "Finding hidden meaning not explicitly stated",
+    "time_limit_sec": 15,
+    "alternate_answers": ["READ BETWEEN THE LINES", "READING BETWEEN LINES"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "spatial", "value": "LINE_TOP", "symbol": "━", "position": "top", "modifier": null, "cloud_description": "A long straight horizontal vapor trail"},
+      {"type": "text", "value": "READING", "symbol": "📖", "position": "middle", "modifier": null, "cloud_description": "The word READING snugly centered"},
+      {"type": "spatial", "value": "LINE_BOTTOM", "symbol": "━", "position": "bottom", "modifier": null, "cloud_description": "A matching horizontal vapor trail below"}
+    ]
+  },
+  {
+    "id": "t2_06",
+    "answer": "SANDBOX",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 3,
+    "category": "beach",
+    "hint": "Enclosed play area filled with sand",
+    "time_limit_sec": 18,
+    "alternate_answers": ["SAND BOX"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "spatial", "value": "BOX", "symbol": "📦", "position": "enclosure", "modifier": null, "cloud_description": "A square cloud frame or crate outline"},
+      {"type": "text", "value": "SAND", "symbol": "🏖️", "position": "inside", "modifier": null, "cloud_description": "The word SAND written squarely inside the box"}
+    ]
+  },
+  {
+    "id": "t2_07",
+    "answer": "HIGH TIDE",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 3,
+    "category": "coastal",
+    "hint": "When the sea reaches its peak level on the beach",
+    "time_limit_sec": 16,
+    "alternate_answers": ["HIGHTIDE"],
+    "combinable_part": "noun_phrase",
+    "clues": [
+      {"type": "text", "value": "TIDE", "symbol": "🌊", "position": "top", "modifier": null, "cloud_description": "The word TIDE placed at the very highest zenith of the sky"}
+    ]
+  },
+  {
+    "id": "t2_08",
+    "answer": "WALKING ON AIR",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 4,
+    "category": "idiom",
+    "hint": "Feeling overjoyed and exhilarated",
+    "time_limit_sec": 15,
+    "alternate_answers": ["WALK ON AIR"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "text", "value": "WALKING", "symbol": "🚶", "position": "top", "modifier": null, "cloud_description": "The word WALKING (or footsteps) elevated high"},
+      {"type": "text", "value": "AIR", "symbol": "💨", "position": "bottom", "modifier": null, "cloud_description": "The word AIR underneath support"}
+    ]
+  },
+  {
+    "id": "t2_09",
+    "answer": "FORGIVE AND FORGET",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 5,
+    "category": "proverb",
+    "hint": "To let go of resentment and move on",
+    "time_limit_sec": 15,
+    "alternate_answers": ["FORGIVE FORGET"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "text", "value": "GIVE", "symbol": "🎁", "position": "left_top", "modifier": "repeat_4", "cloud_description": "Four words laid in order: GIVE GET GIVE GET (4 GIVE AND 4 GET)"}
+    ]
+  },
+  {
+    "id": "t2_10",
+    "answer": "TOUCHDOWN",
+    "tier": "tier_2_spatial",
+    "difficulty_score": 3,
+    "category": "sports",
+    "hint": "Six-point score in football",
+    "time_limit_sec": 16,
+    "alternate_answers": ["TOUCH DOWN"],
+    "combinable_part": "noun_phrase",
+    "clues": [
+      {"type": "text", "value": "TOUCH", "symbol": "👆", "position": "top", "modifier": null, "cloud_description": "The word TOUCH written vertically pointing downwards into the water"}
+    ]
+  }
+]

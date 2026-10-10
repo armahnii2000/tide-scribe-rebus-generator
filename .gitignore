@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+all_ranked_puzzles.json
+.DS_Store

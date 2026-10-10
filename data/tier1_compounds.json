@@ -1,0 +1,194 @@
+[
+  {
+    "id": "t1_01",
+    "answer": "SUNGLASSES",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "compound_word",
+    "hint": "Beach eyewear",
+    "time_limit_sec": 20,
+    "alternate_answers": ["SUN GLASSES", "SUN-GLASSES"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "SUN", "symbol": "☀️", "position": "left", "modifier": null, "cloud_description": "A radiant fluffy sun cloud"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign carved in air"},
+      {"type": "icon", "value": "GLASSES", "symbol": "👓", "position": "right", "modifier": null, "cloud_description": "Spectacles shaped cloud"}
+    ]
+  },
+  {
+    "id": "t1_02",
+    "answer": "STARFISH",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "marine_life",
+    "hint": "Five-armed sea creature",
+    "time_limit_sec": 20,
+    "alternate_answers": ["STAR FISH"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "STAR", "symbol": "⭐", "position": "left", "modifier": null, "cloud_description": "A glowing five-pointed star cloud"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign in vapor"},
+      {"type": "icon", "value": "FISH", "symbol": "🐟", "position": "right", "modifier": null, "cloud_description": "A swimming fish cloud"}
+    ]
+  },
+  {
+    "id": "t1_03",
+    "answer": "SANDCASTLE",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "beach",
+    "hint": "Sculpture built on the shore",
+    "time_limit_sec": 20,
+    "alternate_answers": ["SAND CASTLE"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "SAND", "symbol": "🏖️", "position": "left", "modifier": null, "cloud_description": "A mound of golden sand grains in cloud silhouette"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "CASTLE", "symbol": "🏰", "position": "right", "modifier": null, "cloud_description": "Fortress with turrets and battlements"}
+    ]
+  },
+  {
+    "id": "t1_04",
+    "answer": "JELLYFISH",
+    "tier": "tier_1_compound",
+    "difficulty_score": 2,
+    "category": "marine_life",
+    "hint": "Translucent tentacled sea drifter",
+    "time_limit_sec": 18,
+    "alternate_answers": ["JELLY FISH"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "JELLY", "symbol": "🫙", "position": "left", "modifier": null, "cloud_description": "A jar of strawberry jam/jelly"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "FISH", "symbol": "🐟", "position": "right", "modifier": null, "cloud_description": "A small swimming fish"}
+    ]
+  },
+  {
+    "id": "t1_05",
+    "answer": "LIGHTHOUSE",
+    "tier": "tier_1_compound",
+    "difficulty_score": 2,
+    "category": "coastal",
+    "hint": "Tower guiding ships at sea",
+    "time_limit_sec": 18,
+    "alternate_answers": ["LIGHT HOUSE"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "LIGHT", "symbol": "💡", "position": "left", "modifier": null, "cloud_description": "A shining incandescent light bulb"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "HOUSE", "symbol": "🏠", "position": "right", "modifier": null, "cloud_description": "A cozy cottage with a peaked roof"}
+    ]
+  },
+  {
+    "id": "t1_06",
+    "answer": "SEASHELL",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "beach",
+    "hint": "Shoreline treasure left by mollusks",
+    "time_limit_sec": 20,
+    "alternate_answers": ["SEA SHELL"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "SEA", "symbol": "🌊", "position": "left", "modifier": null, "cloud_description": "Rolling ocean wave crest"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "SHELL", "symbol": "🐚", "position": "right", "modifier": null, "cloud_description": "A spiral conch outline"}
+    ]
+  },
+  {
+    "id": "t1_07",
+    "answer": "SEAHORSE",
+    "tier": "tier_1_compound",
+    "difficulty_score": 2,
+    "category": "marine_life",
+    "hint": "Curled-tail ocean swimmer",
+    "time_limit_sec": 18,
+    "alternate_answers": ["SEA HORSE"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "SEA", "symbol": "🌊", "position": "left", "modifier": null, "cloud_description": "Ocean waves rolling"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "HORSE", "symbol": "🐎", "position": "right", "modifier": null, "cloud_description": "A galloping stallion"}
+    ]
+  },
+  {
+    "id": "t1_08",
+    "answer": "PANCAKE",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "food",
+    "hint": "Flat breakfast skillet cake",
+    "time_limit_sec": 20,
+    "alternate_answers": ["PAN CAKE"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "PAN", "symbol": "🍳", "position": "left", "modifier": null, "cloud_description": "A frying pan with handle"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "CAKE", "symbol": "🎂", "position": "right", "modifier": null, "cloud_description": "A birthday cake with frosting"}
+    ]
+  },
+  {
+    "id": "t1_09",
+    "answer": "RAINBOW",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "nature",
+    "hint": "Colorful sky arc after a storm",
+    "time_limit_sec": 20,
+    "alternate_answers": ["RAIN BOW"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "RAIN", "symbol": "🌧️", "position": "left", "modifier": null, "cloud_description": "Raindrops falling from a storm cloud"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "BOW", "symbol": "🏹", "position": "right", "modifier": null, "cloud_description": "An archer's bow with taut string"}
+    ]
+  },
+  {
+    "id": "t1_10",
+    "answer": "BUTTERFLY",
+    "tier": "tier_1_compound",
+    "difficulty_score": 2,
+    "category": "nature",
+    "hint": "Winged nectar-sipping insect",
+    "time_limit_sec": 18,
+    "alternate_answers": ["BUTTER FLY"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "BUTTER", "symbol": "🧈", "position": "left", "modifier": null, "cloud_description": "A yellow stick of creamy butter"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "FLY", "symbol": "🪰", "position": "right", "modifier": null, "cloud_description": "A buzzing housefly"}
+    ]
+  },
+  {
+    "id": "t1_11",
+    "answer": "CAMPFIRE",
+    "tier": "tier_1_compound",
+    "difficulty_score": 2,
+    "category": "outdoor",
+    "hint": "Outdoor fire for warmth and s'mores",
+    "time_limit_sec": 18,
+    "alternate_answers": ["CAMP FIRE"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "CAMP", "symbol": "⛺", "position": "left", "modifier": null, "cloud_description": "A triangle camping tent pitch"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "FIRE", "symbol": "🔥", "position": "right", "modifier": null, "cloud_description": "Blazing flames and embers"}
+    ]
+  },
+  {
+    "id": "t1_12",
+    "answer": "SAILBOAT",
+    "tier": "tier_1_compound",
+    "difficulty_score": 1,
+    "category": "coastal",
+    "hint": "Vessel propelled by the wind",
+    "time_limit_sec": 20,
+    "alternate_answers": ["SAIL BOAT"],
+    "combinable_part": "object",
+    "clues": [
+      {"type": "icon", "value": "SAIL", "symbol": "⛵", "position": "left", "modifier": null, "cloud_description": "A triangular canvas billowing in the wind"},
+      {"type": "math", "value": "+", "symbol": "+", "position": "center", "modifier": null, "cloud_description": "Plus sign"},
+      {"type": "icon", "value": "BOAT", "symbol": "🚤", "position": "right", "modifier": null, "cloud_description": "A wooden skiff floating on water"}
+    ]
+  }
+]

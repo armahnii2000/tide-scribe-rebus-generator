@@ -1,0 +1,128 @@
+[
+  {
+    "id": "t3_01",
+    "answer": "PIECE OF CAKE",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 6,
+    "category": "saying",
+    "hint": "Something very easy to accomplish",
+    "time_limit_sec": 15,
+    "alternate_answers": ["A PIECE OF CAKE"],
+    "combinable_part": "predicate_nominal",
+    "clues": [
+      {"type": "icon", "value": "SLICE", "symbol": "🍰", "position": "left", "modifier": null, "cloud_description": "A single cut triangular slice"},
+      {"type": "text", "value": "OF", "symbol": "➡️", "position": "center", "modifier": null, "cloud_description": "The preposition OF"},
+      {"type": "icon", "value": "WHOLE_CAKE", "symbol": "🎂", "position": "right", "modifier": null, "cloud_description": "A large round frosted cake with candles"}
+    ]
+  },
+  {
+    "id": "t3_02",
+    "answer": "TIME FLIES",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 6,
+    "category": "saying",
+    "hint": "Hours passing surprisingly quickly",
+    "time_limit_sec": 14,
+    "alternate_answers": ["TIME FLIES WHEN HAVING FUN"],
+    "combinable_part": "sentence",
+    "clues": [
+      {"type": "icon", "value": "CLOCK", "symbol": "⏰", "position": "left", "modifier": null, "cloud_description": "An alarm clock with ringing bells"},
+      {"type": "icon", "value": "WINGS", "symbol": "🪽", "position": "right", "modifier": "attached", "cloud_description": "Feathered wings sprouting from the clock in flight"}
+    ]
+  },
+  {
+    "id": "t3_03",
+    "answer": "FISH OUT OF WATER",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 7,
+    "category": "idiom",
+    "hint": "Someone uncomfortable in unfamiliar surroundings",
+    "time_limit_sec": 14,
+    "alternate_answers": ["A FISH OUT OF WATER"],
+    "combinable_part": "predicate_nominal",
+    "clues": [
+      {"type": "icon", "value": "FISH", "symbol": "🐟", "position": "left", "modifier": null, "cloud_description": "A fish resting on a sandy towel with sunglasses"},
+      {"type": "spatial", "value": "OUT_OF", "symbol": "↗️", "position": "center", "modifier": null, "cloud_description": "Arrow leaping away from the waves"},
+      {"type": "icon", "value": "WATER", "symbol": "🌊", "position": "right", "modifier": null, "cloud_description": "The ocean surface below"}
+    ]
+  },
+  {
+    "id": "t3_04",
+    "answer": "DROP IN THE OCEAN",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 7,
+    "category": "idiom",
+    "hint": "A very tiny insignificant amount compared to the whole",
+    "time_limit_sec": 14,
+    "alternate_answers": ["A DROP IN THE OCEAN", "DROP IN OCEAN"],
+    "combinable_part": "predicate_nominal",
+    "clues": [
+      {"type": "icon", "value": "DROPLET", "symbol": "💧", "position": "top", "modifier": null, "cloud_description": "A single falling blue water tear drop"},
+      {"type": "spatial", "value": "INTO", "symbol": "⬇️", "position": "middle", "modifier": null, "cloud_description": "Falling directly into"},
+      {"type": "icon", "value": "OCEAN", "symbol": "🌊", "position": "bottom", "modifier": null, "cloud_description": "Vast boundless ocean horizon"}
+    ]
+  },
+  {
+    "id": "t3_05",
+    "answer": "WALKING ON SUNSHINE",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 6,
+    "category": "phrase",
+    "hint": "A cheerful pop song and feeling of pure bliss",
+    "time_limit_sec": 14,
+    "alternate_answers": ["WALK ON SUNSHINE"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "icon", "value": "FOOTSTEPS", "symbol": "👣", "position": "top", "modifier": null, "cloud_description": "A pair of walking footsteps in cloud"},
+      {"type": "spatial", "value": "ON", "symbol": "⬇️", "position": "middle", "modifier": null, "cloud_description": "Treading directly atop"},
+      {"type": "icon", "value": "SUNSHINE", "symbol": "☀️", "position": "bottom", "modifier": null, "cloud_description": "Broad golden sun rays fanning out"}
+    ]
+  },
+  {
+    "id": "t3_06",
+    "answer": "CATCH A WAVE",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 6,
+    "category": "coastal",
+    "hint": "What surfers do to ride the surf",
+    "time_limit_sec": 15,
+    "alternate_answers": ["CATCH THE WAVE"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "icon", "value": "BASEBALL_GLOVE", "symbol": "🧤", "position": "left", "modifier": null, "cloud_description": "A catching mitt or grasping hand"},
+      {"type": "text", "value": "A", "symbol": null, "position": "center", "modifier": null, "cloud_description": "The letter A"},
+      {"type": "icon", "value": "WAVE", "symbol": "🌊", "position": "right", "modifier": null, "cloud_description": "A towering curling surfing barrel wave"}
+    ]
+  },
+  {
+    "id": "t3_07",
+    "answer": "SMOOTH SAILING",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 6,
+    "category": "idiom",
+    "hint": "Easy progress without obstacles",
+    "time_limit_sec": 15,
+    "alternate_answers": ["SMOOTH SAILING AHEAD"],
+    "combinable_part": "noun_phrase",
+    "clues": [
+      {"type": "text", "value": "FLAT_WATER", "symbol": "〰️", "position": "left", "modifier": null, "cloud_description": "Mirror-calm flat glassy surface"},
+      {"type": "icon", "value": "SAILBOAT", "symbol": "⛵", "position": "right", "modifier": null, "cloud_description": "A sailboat gliding peacefully"}
+    ]
+  },
+  {
+    "id": "t3_08",
+    "answer": "SEA YOU LATER",
+    "tier": "tier_3_phrases",
+    "difficulty_score": 7,
+    "category": "pun",
+    "hint": "A beachcomber's friendly farewell",
+    "time_limit_sec": 13,
+    "alternate_answers": ["SEE YOU LATER"],
+    "combinable_part": "interjection",
+    "clues": [
+      {"type": "icon", "value": "SEA", "symbol": "🌊", "position": "left", "modifier": null, "cloud_description": "Ocean waves rolling (sounds like SEE)"},
+      {"type": "icon", "value": "EWE", "symbol": "🐑", "position": "center", "modifier": null, "cloud_description": "A fluffy female sheep (sounds like YOU)"},
+      {"type": "icon", "value": "CLOCK_EVENING", "symbol": "🌙", "position": "right", "modifier": null, "cloud_description": "Crescent moon & clock indicating late hour (LATER)"}
+    ]
+  }
+]

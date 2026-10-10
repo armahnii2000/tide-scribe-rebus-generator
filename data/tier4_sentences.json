@@ -1,0 +1,85 @@
+[
+  {
+    "id": "t4_01",
+    "answer": "I LOVE SANDCASTLES",
+    "tier": "tier_4_sentences",
+    "difficulty_score": 8,
+    "category": "sentence",
+    "hint": "A shoreline sentiment about building fortresses in the sand",
+    "time_limit_sec": 16,
+    "alternate_answers": ["I LOVE SAND CASTLES"],
+    "combinable_part": "full_sentence",
+    "clues": [
+      {"type": "icon", "value": "EYE", "symbol": "👁️", "position": "left", "modifier": null, "cloud_description": "An open looking eye (I)"},
+      {"type": "icon", "value": "HEART", "symbol": "❤️", "position": "center_left", "modifier": null, "cloud_description": "A warm puffy heart cloud (LOVE)"},
+      {"type": "icon", "value": "SAND", "symbol": "🏖️", "position": "center_right", "modifier": null, "cloud_description": "Sand grains (SAND)"},
+      {"type": "icon", "value": "CASTLE", "symbol": "🏰", "position": "right", "modifier": null, "cloud_description": "Turreted fortress (CASTLE)"}
+    ]
+  },
+  {
+    "id": "t4_02",
+    "answer": "CALM BEFORE THE STORM",
+    "tier": "tier_4_sentences",
+    "difficulty_score": 9,
+    "category": "saying",
+    "hint": "An eerie peaceful period right before chaos strikes",
+    "time_limit_sec": 15,
+    "alternate_answers": ["THE CALM BEFORE THE STORM"],
+    "combinable_part": "full_sentence",
+    "clues": [
+      {"type": "icon", "value": "STILL_WATER", "symbol": "🧘", "position": "left", "modifier": null, "cloud_description": "Tranquil glassy horizon with peaceful bird (CALM)"},
+      {"type": "spatial", "value": "BEFORE", "symbol": "⏮️", "position": "center", "modifier": null, "cloud_description": "Timeline arrow pointing prior to"},
+      {"type": "icon", "value": "STORM_CLOUD", "symbol": "⛈️", "position": "right", "modifier": null, "cloud_description": "Fierce dark anvil cloud crackling with thunder (STORM)"}
+    ]
+  },
+  {
+    "id": "t4_03",
+    "answer": "TIME AND TIDE WAIT FOR NO MAN",
+    "tier": "tier_4_sentences",
+    "difficulty_score": 10,
+    "category": "proverb",
+    "hint": "Ancient proverb about the relentless march of nature",
+    "time_limit_sec": 20,
+    "alternate_answers": ["TIME AND TIDE WAIT FOR NO ONE", "TIME AND TIDE"],
+    "combinable_part": "full_sentence",
+    "clues": [
+      {"type": "icon", "value": "CLOCK", "symbol": "⏳", "position": "left", "modifier": null, "cloud_description": "Hourglass trickling sand (TIME)"},
+      {"type": "math", "value": "&", "symbol": "&", "position": "left_mid", "modifier": null, "cloud_description": "Ampersand"},
+      {"type": "icon", "value": "TIDE", "symbol": "🌊", "position": "center", "modifier": null, "cloud_description": "Ocean tide swelling (TIDE)"},
+      {"type": "icon", "value": "STOPWATCH", "symbol": "🛑", "position": "center_right", "modifier": null, "cloud_description": "A hand waving stop (WAIT)"},
+      {"type": "text", "value": "0 👤", "symbol": "🚫", "position": "right", "modifier": null, "cloud_description": "Zero silhouette (NO MAN)"}
+    ]
+  },
+  {
+    "id": "t4_04",
+    "answer": "MAKE A SPLASH",
+    "tier": "tier_4_sentences",
+    "difficulty_score": 8,
+    "category": "phrase",
+    "hint": "To attract widespread excitement and notice",
+    "time_limit_sec": 14,
+    "alternate_answers": ["MAKING A SPLASH"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "icon", "value": "HAMMER", "symbol": "🔨", "position": "left", "modifier": null, "cloud_description": "Craftsman shaping an object (MAKE)"},
+      {"type": "text", "value": "A", "symbol": null, "position": "center", "modifier": null, "cloud_description": "The letter A"},
+      {"type": "icon", "value": "WATER_SPLASH", "symbol": "💦", "position": "right", "modifier": null, "cloud_description": "Dynamic crown of exploding droplets (SPLASH)"}
+    ]
+  },
+  {
+    "id": "t4_05",
+    "answer": "RIDING THE CREST OF THE WAVE",
+    "tier": "tier_4_sentences",
+    "difficulty_score": 9,
+    "category": "idiom",
+    "hint": "Enjoying peak success and momentum",
+    "time_limit_sec": 16,
+    "alternate_answers": ["ON THE CREST OF A WAVE", "CREST OF THE WAVE"],
+    "combinable_part": "predicate",
+    "clues": [
+      {"type": "icon", "value": "SURFER", "symbol": "🏄", "position": "top", "modifier": null, "cloud_description": "A figure balancing proudly (RIDING)"},
+      {"type": "spatial", "value": "CREST", "symbol": "🔝", "position": "middle", "modifier": null, "cloud_description": "Perched at the exact curly peak"},
+      {"type": "icon", "value": "BIG_WAVE", "symbol": "🌊", "position": "bottom", "modifier": null, "cloud_description": "A massive ocean wave rolling beneath"}
+    ]
+  }
+]
