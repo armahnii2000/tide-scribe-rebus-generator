@@ -84,13 +84,10 @@ class RebusLibrary:
         return random.choice(pool) if pool else None
 
     def combine_new_sentence(self) -> Optional[RebusPuzzle]:
-        """Combines atomic puzzles into a fresh, dynamic multi-part sentence."""
+        """Returns a natural, semantically coherent multi-part sentence rebus."""
         if not self.combiner:
             return None
-        tier1_pool = self.get_by_tier(DifficultyTier.TIER_1_COMPOUND)
-        if not tier1_pool:
-            return None
-        return self.combiner.generate_sentence_puzzle(tier1_pool)
+        return self.combiner.get_natural_sentence_puzzle()
 
     def get_stats(self) -> Dict[str, Any]:
         stats = {

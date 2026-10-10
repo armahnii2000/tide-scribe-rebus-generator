@@ -1,34 +1,72 @@
 {
-  "description": "Rules for dynamically combining atomic rebus elements into compound phrases and sentences.",
-  "subjects": [
-    {"value": "I", "symbol": "👁️", "description": "Eye icon (phonetic I)"},
-    {"value": "YOU", "symbol": "👉", "description": "Pointing hand icon (YOU)"},
-    {"value": "WE", "symbol": "👥", "description": "Pair of silhouettes (WE)"},
-    {"value": "THE SUN", "symbol": "☀️", "description": "Bright sun icon"},
-    {"value": "A SURFER", "symbol": "🏄", "description": "Person on surfboard"}
-  ],
-  "verbs": [
-    {"value": "LOVE", "symbol": "❤️", "description": "Heart icon"},
-    {"value": "SEE", "symbol": "🌊", "description": "Ocean sea icon (phonetic SEE)"},
-    {"value": "FOUND", "symbol": "🔍", "description": "Magnifying glass over treasure"},
-    {"value": "BUILT", "symbol": "🛠️", "description": "Tools building something"}
-  ],
-  "templates": [
+  "description": "Curated, grammatically coherent compound sentences where every element forms a natural, meaningful thought.",
+  "collocation_sentences": [
     {
-      "id": "tpl_subj_verb_obj",
-      "pattern": ["subject", "verb", "tier1_object"],
-      "difficulty_tier": "tier_3_phrases",
-      "difficulty_score": 6,
+      "id": "colloc_01",
+      "answer": "I FOUND A SEASHELL",
+      "category": "beachcomber_story",
+      "hint": "A shoreline discovery along the tide line",
+      "difficulty_score": 7,
       "time_limit_sec": 18,
-      "example": "I LOVE SANDCASTLES"
+      "elements": [
+        {"type": "icon", "value": "I", "symbol": "👁️", "position": "left", "cloud_description": "An eye gazing outward (phonetic I)"},
+        {"type": "icon", "value": "FOUND", "symbol": "🔍", "position": "center_left", "cloud_description": "A magnifying glass discovering a treasure (FOUND)"},
+        {"type": "text", "value": "A", "symbol": "A", "position": "center", "cloud_description": "The letter A in sky vapor"},
+        {"type": "icon", "value": "SEASHELL", "symbol": "🐚", "position": "right", "cloud_description": "A conch shell resting on the foam (SEASHELL)"}
+      ]
     },
     {
-      "id": "tpl_spatial_sentence",
-      "pattern": ["subject", "verb", "tier2_spatial"],
-      "difficulty_tier": "tier_4_sentences",
+      "id": "colloc_02",
+      "answer": "WE BUILT A SANDCASTLE",
+      "category": "beach_memory",
+      "hint": "A collaborative beach creation before the waves arrive",
+      "difficulty_score": 7,
+      "time_limit_sec": 18,
+      "elements": [
+        {"type": "icon", "value": "WE", "symbol": "👥", "position": "left", "cloud_description": "Two silhouettes standing together (WE)"},
+        {"type": "icon", "value": "BUILT", "symbol": "🛠️", "position": "center_left", "cloud_description": "Buckets and trowels crafting (BUILT)"},
+        {"type": "text", "value": "A", "symbol": "A", "position": "center", "cloud_description": "The letter A"},
+        {"type": "icon", "value": "SANDCASTLE", "symbol": "🏰", "position": "right", "cloud_description": "A fort with turrets sculpted in sand (SANDCASTLE)"}
+      ]
+    },
+    {
+      "id": "colloc_03",
+      "answer": "THE WAVES WASH THE SAND",
+      "category": "poetic_truth",
+      "hint": "What the ocean surf does rhythmically every few seconds",
       "difficulty_score": 8,
       "time_limit_sec": 18,
-      "example": "I UNDERSTAND HIGH TIDE"
+      "elements": [
+        {"type": "icon", "value": "WAVES", "symbol": "🌊", "position": "left", "cloud_description": "Rolling ocean surf (THE WAVES)"},
+        {"type": "icon", "value": "WASH", "symbol": "🫧", "position": "center", "cloud_description": "Bubbling foam smoothing everything flat (WASH)"},
+        {"type": "icon", "value": "SAND", "symbol": "🏖️", "position": "right", "cloud_description": "Golden shoreline sand (THE SAND)"}
+      ]
+    },
+    {
+      "id": "colloc_04",
+      "answer": "THE LIGHTHOUSE SHINES BRIGHT",
+      "category": "coastal_night",
+      "hint": "The coastal beacon cutting through evening sea fog",
+      "difficulty_score": 8,
+      "time_limit_sec": 18,
+      "elements": [
+        {"type": "icon", "value": "LIGHTHOUSE", "symbol": "🏮", "position": "left", "cloud_description": "A tall stone coastal tower (THE LIGHTHOUSE)"},
+        {"type": "icon", "value": "SHINES", "symbol": "✨", "position": "center", "cloud_description": "Beaming rays cutting through mist (SHINES)"},
+        {"type": "icon", "value": "BRIGHT", "symbol": "💡", "position": "right", "cloud_description": "A brilliant glowing light (BRIGHT)"}
+      ]
+    },
+    {
+      "id": "colloc_05",
+      "answer": "I WEAR SUNGLASSES",
+      "category": "summer_day",
+      "hint": "What you put on to protect your eyes on a sunny afternoon",
+      "difficulty_score": 7,
+      "time_limit_sec": 16,
+      "elements": [
+        {"type": "icon", "value": "I", "symbol": "👁️", "position": "left", "cloud_description": "Eye icon (I)"},
+        {"type": "icon", "value": "WEAR", "symbol": "🧢", "position": "center", "cloud_description": "Putting on beach gear (WEAR)"},
+        {"type": "icon", "value": "SUNGLASSES", "symbol": "🕶️", "position": "right", "cloud_description": "Dark UV sunglasses"}
+      ]
     }
   ]
 }
