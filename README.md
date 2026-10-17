@@ -1,88 +1,114 @@
-# 🌊 Tide Scribe - Rebus Puzzle Library
+# Tide Scribe — Procedural Rebus Generation Engine
 
-A ranked, curated, and combinable Rebus puzzle library designed for word & puzzle games. Built especially for games where **pictorial and typographic riddles form across the sky** and players race against the ocean tide to carve answers into the wet sand.
+An algorithmic, on-the-fly Rebus puzzle generation engine and CLI written in Python. While it includes a curated seed lexicon, Tide Scribe's core capability is procedurally decomposing arbitrary phrases and sentences into multi-modal pictorial, phonetic, and typographic riddles with automated difficulty ranking and solvability checks.
 
----
-
-## 🎯 Features
-
-- **Tiered Difficulty Ranking:** 4 distinct tiers ranked from 1 (Gentle Compound Words) to 10 (Full Cryptic Sentences & Proverbs).
-- **Phrase & Sentence Combiner:** Dynamically merges atomic subjects, verbs, and objects into cohesive multi-part sentence rebuses.
-- **Game-Engine Ready:** Every puzzle includes cloud vapor descriptions, emoji symbols, spatial position tags, and strict/normalized answer checking.
-- **Ocean Wave Timers:** Tuned time limits per difficulty level for pressure-based wave mechanics.
+Originally designed for word and puzzle games where **pictorial and typographic riddles form across the sky** and players race against the ocean tide to carve answers into the wet sand.
 
 ---
 
-## 📈 Difficulty Groups
+## Architecture & Generation Pipeline
+
+```
+Input Phrase ("I UNDERSTAND")
+       │
+       ▼
+[ Token & Morphological Parser ]
+       │
+       ├─► 1. Phonetic Decomposition (Homophones & sound-alike tokens)
+       ├─► 2. Semantic & Icon Mapping (Concept → visual glyph / emoji)
+       ├─► 3. Spatial & Typographic Transform (Layout offsets: over, under, split, inverted)
+       └─► 4. Letter Arithmetic (Additive / subtractive glyph operations)
+       │
+       ▼
+[ Heuristic Solvability & Difficulty Scorer ] ──► (Ranks 1–10, calculates solve window)
+       │
+       ▼
+[ Scene Graph & Engine Exporter ] ──► (Emits game-ready JSON for Godot 4 / Canvas / Terminal)
+```
+
+1. **Phonetic & Morphological Decomposition:** Breaks words into syllables, homophones, and phonetic fragments (e.g., decomposing "before" into `B` + `4`, or "sea" into 🌊).
+2. **Semantic Substitution:** Replaces atomic tokens with corresponding visual symbols, emojis, or pictorial icons from the seed lexicon.
+3. **Spatial & Typographic Layouts:** Computes non-linear 2D layout relationships:
+   - *Vertical Stacking:* `STAND` placed vertically over `I` $\rightarrow$ `I UNDERSTAND`.
+   - *Containment:* `IN` placed inside a word boundary.
+   - *Typographic Sizing:* Scaling and positioning to represent words like "high", "low", "growing", or "split".
+4. **Letter Arithmetic:** Generates valid addition and subtraction operations on glyphs (e.g., $CLUES - S = CLUE$).
+5. **Heuristic Difficulty & Ambiguity Scorer:** Calculates cognitive complexity based on token obscurity, spatial abstraction, and phonetic distance to assign a difficulty score (1–10) and dynamic countdown timer.
+
+---
+
+## Difficulty Tiers
 
 | Group | Tier Name | Difficulty Score | Description | Example |
 |---|---|---|---|---|
-| **Tier 1** | `tier_1_compound` | 1 – 2 | Concrete, intuitive compound words (no abstract letter math). | ☀️ + 👓 $\rightarrow$ `SUNGLASSES` |
-| **Tier 2** | `tier_2_spatial` | 3 – 5 | Typographic and spatial positioning in the sky (over, under, between). | `STAND` over `I` $\rightarrow$ `I UNDERSTAND` |
-| **Tier 3** | `tier_3_phrases` | 6 – 7 | Multi-element visual idioms and coastal sayings. | 🍰 + `OF` + 🎂 $\rightarrow$ `PIECE OF CAKE` |
-| **Tier 4** | `tier_4_sentences` | 8 – 10 | Composite full sentences and ancient coastal proverbs. | 👁️ + ❤️ + 🏖️ + 🏰 $\rightarrow$ `I LOVE SANDCASTLES` |
+| **Tier 1** | `tier_1_compound` | 1 – 2 | Concrete, intuitive compound words (direct icon addition). | ☀️ + 👓 $\rightarrow$ `SUNGLASSES` |
+| **Tier 2** | `tier_2_spatial` | 3 – 5 | Typographic and spatial positioning (over, under, between, inside). | `STAND` over `I` $\rightarrow$ `I UNDERSTAND` |
+| **Tier 3** | `tier_3_phrases` | 6 – 7 | Multi-element visual idioms and common phrases. | 🍰 + `OF` + 🎂 $\rightarrow$ `PIECE OF CAKE` |
+| **Tier 4** | `tier_4_sentences` | 8 – 10 | Composite full sentences and abstract riddles with mixed operations. | 👁️ + ❤️ + 🏖️ + 🏰 $\rightarrow$ `I LOVE SANDCASTLES` |
 
 ---
 
-## 🚀 Quickstart & CLI
-
-### Run the CLI Tool:
+## CLI & Quickstart
 
 ```bash
-# View library stats across tiers
+# Generate a procedural rebus on the fly from an arbitrary phrase
+python3 -m rebus.cli generate "I UNDERSTAND"
+
+# Generate with explicit difficulty constraints
+python3 -m rebus.cli generate "ONCE IN A BLUE MOON" --tier tier_3_phrases
+
+# View seed library statistics
 python3 -m rebus.cli stats
 
-# List all puzzles in order of difficulty
+# List seed puzzles ordered by difficulty
 python3 -m rebus.cli list
 
-# Filter by specific tier
-python3 -m rebus.cli list --tier tier_1_compound
-
-# Synthesize a dynamic phrase or sentence across the sky
+# Synthesize a composite phrase across spatial layout coordinates
 python3 -m rebus.cli combine
 
 # Play an interactive terminal beach round against the incoming tide
 python3 -m rebus.cli play --tier tier_2_spatial
 
-# Export unified JSON for Godot or web engines
+# Export generated puzzles to engine-ready JSON (Godot 4 / Web Canvas)
 python3 -m rebus.cli export --output all_puzzles.json
 ```
 
 ---
 
-## 🧩 Schema Example
+## Puzzle Schema
+
+Generated puzzles emit a clean, engine-agnostic schema with precise spatial and semantic metadata:
 
 ```json
 {
-  "id": "t1_03",
-  "answer": "SANDCASTLE",
-  "tier": "tier_1_compound",
-  "difficulty_score": 1,
-  "category": "beach",
-  "hint": "Sculpture built on the shore",
-  "time_limit_sec": 20,
-  "alternate_answers": ["SAND CASTLE"],
+  "id": "gen_spatial_042",
+  "answer": "I UNDERSTAND",
+  "tier": "tier_2_spatial",
+  "difficulty_score": 4,
+  "category": "spatial_typographic",
+  "hint": "Comprehension idiom",
+  "time_limit_sec": 18,
+  "alternate_answers": ["I UNDERSTAND", "UNDERSTAND"],
   "clues": [
     {
-      "type": "icon",
-      "value": "SAND",
-      "symbol": "🏖️",
-      "position": "left",
-      "cloud_description": "A mound of golden sand grains in cloud silhouette"
+      "type": "text",
+      "value": "STAND",
+      "symbol": "STAND",
+      "position": "top",
+      "cloud_description": "The word STAND rendered in bold vapor"
     },
     {
-      "type": "math",
-      "value": "+",
-      "symbol": "+",
-      "position": "center",
-      "cloud_description": "Plus sign in vapor"
+      "type": "spatial_relation",
+      "value": "OVER",
+      "position": "relation",
+      "target": "I"
     },
     {
-      "type": "icon",
-      "value": "CASTLE",
-      "symbol": "🏰",
-      "position": "right",
-      "cloud_description": "Fortress with turrets and battlements"
+      "type": "text",
+      "value": "I",
+      "symbol": "I",
+      "position": "bottom",
+      "cloud_description": "The letter I rendered beneath STAND"
     }
   ]
 }
@@ -90,8 +116,27 @@ python3 -m rebus.cli export --output all_puzzles.json
 
 ---
 
-## 🧪 Testing
+## Roadmap
+
+- [x] Seed lexicon with 4-tier difficulty curation and baseline validation.
+- [x] Interactive terminal player with tide timer emulation.
+- [x] Multi-part sentence and collocation combiner.
+- [ ] Automated phonetic decomposition using CMU Pronouncing Dictionary phoneme mappings.
+- [ ] Dynamic spatial layout solver for rendering composite 2D layout trees into SVG / HTML Canvas.
+- [ ] Headless difficulty calibration harness to benchmark puzzle solvability and time-to-solve distributions.
+
+---
+
+## Testing
+
+Run unit tests directly:
 
 ```bash
 python3 -m unittest discover -s tests
 ```
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

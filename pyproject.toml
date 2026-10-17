@@ -3,11 +3,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tide-scribe-rebus-library"
-version = "0.1.0"
-description = "Curated and combinable rebus puzzle library for games with difficulty ranking"
+name = "tide-scribe-rebus-generator"
+version = "0.2.0"
+description = "Algorithmic on-the-fly Rebus puzzle generation engine and CLI with phonetic, spatial, and semantic decomposition"
 readme = "README.md"
-authors = [{ name = "Tide Scribe Team" }]
+authors = [{ name = "George Armah" }]
 license = { text = "MIT" }
 requires-python = ">=3.8"
 dependencies = []
